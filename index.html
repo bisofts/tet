@@ -46,8 +46,9 @@ function cutdown(divName, expired){
     }
   }, 1000);
 }
-cutdown("app1","Jan 1, 2022 00:00:00");
-cutdown("app2","Feb 1, 2022 00:00:00");
+var current_year = new Date().getFullYear() + 1;  
+cutdown("app1","Jan 1, " + current_year + " 00:00:00");
+cutdown("app2","Feb 1, " + current_year + " 00:00:00");
 </script>
 
 </body>
